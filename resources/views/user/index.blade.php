@@ -29,56 +29,60 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <!-- Header Baru (Hijau Toska & Flexbox Sejajar) -->
-    <header style="background-color: #138477; padding: 14px 0;">
-        <div class="container">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+    <!-- Header Baru (Hijau Toska & Pojok Kiri-Kanan) -->
+    <header style="background-color: #138477; padding: 14px 0; width: 100%;">
+        <div style="width: 100%; padding: 0 30px; display: flex; justify-content: space-between; align-items: center;">
 
-                <!-- Logo Kiri -->
-                <a href="{{ url('/') }}" style="display: flex; align-items: center; text-decoration: none;">
-                    <img src="{{ asset('assets-user/img/logo-khv.png') }}" alt="KHV Vet" style="max-height: 45px;">
+            <!-- Logo Pojok Kiri -->
+            <a href="{{ url('/') }}" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="{{ asset('assets-user/img/logo-khv.png') }}" alt="KHV Vet" style="max-height: 45px;">
+            </a>
+
+            <!-- Menu Pojok Kanan (Daftar & Masuk) -->
+            <div style="display: flex; align-items: center; gap: 25px;">
+                <a href="#" style="color: #ffffff; font-weight: 600; font-size: 15px; text-decoration: none;">
+                    Daftar
                 </a>
-
-                <!-- Menu Kanan (Daftar & Masuk Sejajar) -->
-                <div style="display: flex; align-items: center; gap: 28px;">
-                    <a href="#" style="color: #ffffff; font-weight: 600; font-size: 15px; text-decoration: none;">
-                        Daftar
-                    </a>
-                    <a href="#" style="color: #ffffff; font-weight: 600; font-size: 15px; text-decoration: none;">
-                        Masuk
-                    </a>
-                </div>
-
+                <a href="#" style="color: #ffffff; font-weight: 600; font-size: 15px; text-decoration: none;">
+                    Masuk
+                </a>
             </div>
+
         </div>
     </header>
 
-    <!-- Hero Section Baru (Putih, Kucing di Kiri, Teks di Kanan) -->
-    <div class="hero_area" style="background-color: #ffffff; padding: 80px 0;">
+    <!-- Hero Section Bersih & Proporsional -->
+    <section
+        style="min-height: calc(100vh - 73px); display: flex; align-items: center; background-color: #ffffff; padding: 40px 0;">
         <div class="container">
             <div class="row align-items-center">
-                <!-- Gambar Kucing di Kiri -->
-                <div class="col-lg-5 col-md-6 text-center">
-                    <img src="{{ asset('assets-user/img/banner/cat.png') }}" alt="Anabul" class="img-fluid">
+
+                <!-- Kolom Kiri: Gambar Kucing -->
+                <div class="col-lg-6 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="{{ asset('assets-user/img/banner/cat.png') }}" alt="Anabul"
+                        style="width: 100%; max-width: 480px; height: auto; object-fit: contain;">
                 </div>
-                <!-- Teks & Tombol di Kanan -->
-                <div class="col-lg-6 offset-lg-1 col-md-6">
-                    <div class="hero_text">
-                        <h3 style="color: #111827; font-size: 42px; font-weight: 800; line-height: 1.25; margin-bottom: 20px;">
-                            Rumah Kedua yang Penuh Kasih untuk Anabul Kesayangan Anda.
-                        </h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.7; margin-bottom: 30px;">
-                            Karena mereka bukan sekadar hewan peliharaan, tapi bagian dari keluarga. Kami di KHV siap menjaga senyum dan kesehatan mereka setiap hari.
-                        </p>
-                        <a href="#" style="background-color: #138477; color: #ffffff; padding: 14px 32px; border-radius: 30px; font-weight: 600; display: inline-block; text-decoration: none;">
-                            contact us &rarr;
-                        </a>
-                    </div>
+
+                <!-- Kolom Kanan: Teks & Tombol -->
+                <div class="col-lg-6 col-md-6" style="padding-left: 30px;">
+                    <h1
+                        style="font-weight: 800; font-size: 46px; line-height: 1.2; color: #0f172a; margin-bottom: 20px;">
+                        Rumah Kedua yang Penuh Kasih untuk Anabul Kesayangan Anda.
+                    </h1>
+                    <p
+                        style="color: #64748b; font-size: 16px; line-height: 1.7; margin-bottom: 32px; max-width: 500px;">
+                        Karena mereka bukan sekadar hewan peliharaan, tapi bagian dari keluarga. Kami di KHV siap
+                        menjaga senyum dan kesehatan mereka setiap hari.
+                    </p>
+                    <a href="#"
+                        style="display: inline-block; background-color: #138477; color: #ffffff; padding: 14px 34px; border-radius: 50px; font-weight: 600; font-size: 15px; text-decoration: none; box-shadow: 0 4px 14px rgba(19, 132, 119, 0.25);">
+                        contact us →
+                    </a>
                 </div>
+
             </div>
         </div>
-    </div>
-    <!-- Hero Section End -->
+    </section>
 
     <!-- service_area_start  -->
     <div class="service_area">
@@ -86,9 +90,10 @@
             <div class="row justify-content-center ">
                 <div class="col-lg-7 col-md-10">
                     <div class="section_title text-center mb-95">
-                        <h3>Services for every dog</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna.</p>
+                        <h3>Layanan Kami untuk Anabul</h3>
+                        <p>Perawatan menyeluruh dengan dokter hewan berpengalaman dan fasilitas nyaman untuk
+                            menjaga
+                            kesehatan hewan kesayangan Anda.</p>
                     </div>
                 </div>
             </div>
@@ -101,9 +106,10 @@
                             </div>
                         </div>
                         <div class="service_content text-center">
-                            <h3>Pet Boarding</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut</p>
+                            <h3>Pemeriksaan & Vaksinasi</h3>
+                            <p>Konsultasi kesehatan rutin, diagnosa penyakit, serta vaksinasi lengkap untuk
+                                mencegah
+                                virus berbahaya.</p>
                         </div>
                     </div>
                 </div>
@@ -115,9 +121,10 @@
                             </div>
                         </div>
                         <div class="service_content text-center">
-                            <h3>Healthy Meals</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut</p>
+                            <h3>Pet Hotel & Penitipan</h3>
+                            <p>Penitipan anabul yang aman, bersih, dan terawasi langsung oleh tim medis
+                                selama Anda
+                                bepergian.</p>
                         </div>
                     </div>
                 </div>
@@ -129,9 +136,10 @@
                             </div>
                         </div>
                         <div class="service_content text-center">
-                            <h3>Pet Spa</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut</p>
+                            <h3>Grooming & Perawatan</h3>
+                            <p>Perawatan kebersihan bulu, mandi sehat, potong kuku, dan pembersihan telinga
+                                agar anabul
+                                tetap segar.</p>
                         </div>
                     </div>
                 </div>
@@ -154,8 +162,10 @@
                         <div class="section_title">
                             <h3><span>We care your pet </span> <br>
                                 As you care</h3>
-                            <p>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do <br> iusmod tempor incididunt
-                                ut labore et dolore magna aliqua. <br> Quis ipsum suspendisse ultrices gravida. Risus
+                            <p>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do <br> iusmod
+                                tempor incididunt
+                                ut labore et dolore magna aliqua. <br> Quis ipsum suspendisse ultrices
+                                gravida. Risus
                                 commodo <br>
                                 viverra maecenas accumsan.</p>
                             <a href="#" class="boxed-btn3">About Us</a>
@@ -176,7 +186,8 @@
                         <div class="section_title">
                             <h3><span>We need your</span>
                                 help Adopt Us</h3>
-                            <p>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do iusmod tempor incididunt ut
+                            <p>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do iusmod tempor
+                                incididunt ut
                                 labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p>
                             <a href="#" class="boxed-btn3">Contact Us</a>
                         </div>
@@ -232,8 +243,10 @@
                                 <div class="test_content">
                                     <h4>Jhon Walker</h4>
                                     <span>Head of web design</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis
                                         nostrud exerci.</p>
                                 </div>
                             </div>
@@ -246,8 +259,10 @@
                                 <div class="test_content">
                                     <h4>Jhon Walker</h4>
                                     <span>Head of web design</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis
                                         nostrud exerci.</p>
                                 </div>
                             </div>
@@ -260,8 +275,10 @@
                                 <div class="test_content">
                                     <h4>Jhon Walker</h4>
                                     <span>Head of web design</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis
                                         nostrud exerci.</p>
                                 </div>
                             </div>
@@ -280,7 +297,8 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section_title text-center mb-95">
                         <h3>Our Team</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
                             labore et dolore magna.</p>
                     </div>
                 </div>
@@ -337,7 +355,8 @@
                     <div class="contact_text text-center">
                         <div class="section_title text-center">
                             <h3>Why go with Anipat?</h3>
-                            <p>Because we know that even the best technology is only as good as the people behind it.
+                            <p>Because we know that even the best technology is only as good as the people
+                                behind it.
                                 24/7 tech support.</p>
                         </div>
                         <div class="contact_btn d-flex align-items-center justify-content-center">
